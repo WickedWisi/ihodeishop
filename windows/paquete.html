@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paquete de Horas en HodeiCloud">
+  <meta name="author" content="HodeiCloud">
+  <title>iHodei Packs - iHodei Shop</title>
+
+  <link rel="icon" href="../imagen/logo.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/paquete.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body class="servicios d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../imagen/logoHodei.png" alt="Logo HodeiCloud" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="tienda.html">iHodei Digital</a></li>
+          <li class="nav-item"><a class="nav-link" href="paquete.html">iHodei Packs</a></li>
+          <li class="nav-item"><a class="nav-link" href="cena.html">iHodei Live</a></li>
+        </ul>
+        <div style="position: relative;">
+          <button class="btn btn-outline-dark" id="cart-button">
+            <i class="bi-cart-fill me-1"></i>
+            <span class="badge bg-dark text-white rounded-pill">0</span>
+          </button>
+        
+          <!-- Carrito -->
+          <div id="cart-dropdown" class="card shadow"
+            style="display: none; position: absolute; top: 50px; right: 0; width: 380px; height: 500px; z-index: 9999; background: white; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <span><strong>🛒 Tu carrito</strong></span>
+              <button class="btn-close btn-sm cerrar-carrito" type="button"></button>
+            </div>
+            <div class="card-body d-flex flex-column p-2" style="height: calc(100% - 56px);">
+              <ul id="cart-list" class="list-group mb-3" style="flex: 1; overflow-y: auto;"></ul>
+              <div class="mt-auto">
+                <div class="text-end mb-2 total-carrito">
+                  <strong class="titulo-total">Total:</strong>
+                  <span id="cart-total" class="cantidad-total">0.00 €</span>
+                </div>
+                <button id="finalizar-compra" class="btn btn-primary w-100">Finalizar compra</button>
+              </div>
+            </div>
+          </div>
+          <div id="cart-overlay" class="cart-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="flex-grow-1">
+    <!-- Header -->
+    <!-- Header adaptado como en index -->
+  <div class="header-wrapper">
+    <header class="header-bg text-center text-white">
+      <div class="container">
+        <h1 class="display-4 fw-bolder">iHodei Packs</h1>
+      </div>
+    </header>
+  </div>
+
+    
+    <!-- Sección principal -->
+    <section class="py-5 paquete-texto">
+        <div class="container">
+          <div class="row paquete-info align-items-center">
+            <div class="col-lg-6">
+              <img src="../imagen/paqueteHoras.png" alt="Paquete de Horas" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="fw-bolder">¿Qué son los iHodei Packs?</h2>
+              <p>iHodei Packs es nuestra forma flexible y transparente de ofrecerte acompañamiento profesional, sin ataduras.
+                Tú eliges cuántas horas contratar, y nosotros ponemos a tu disposición a nuestro equipo de marketing, diseño, desarrollo web, redes sociales o soporte técnico.</p>
+              <ul>
+                <li>¿Quieres lanzar una campaña en Instagram?</li>
+                <li>¿Mejorar tu web?</li> 
+                <li>¿Tener apoyo técnico?</li> 
+              </ul>
+              <p><b>Lo haces con nosotros, por horas, sin líos.</b></p>
+              <button class="btn btn-primary abrir-modal">Contratar ahora</button>
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="header-bg text-center text-white">
+      <div class="container py-4">
+        <h1 class="fw-bolder">¿Qué te ofrecemos?</h1>
+      </div>
+    </div>
+    
+
+    <div class="ventajas-pack">
+      <div class="fila fila-superior">
+        <div class="item">🎯 Solo pagas por lo que usas</div>
+        <div class="item">🔧 Tú decides en qué trabajamos</div>
+        <div class="item">🤝 Trato directo con nuestro equipo</div>
+      </div>
+      <div class="fila fila-inferior">
+        <div class="item espaciado">🚀 Resultados rápidos y visibles</div>
+        <div class="item espaciado">🔄 Sin permanencias ni compromisos raros</div>
+      </div>
+    </div>
+    <div class="bloque-pack text-center mt-5">
+      <p>Contratar un pack no es solo resolver una tarea pendiente, 
+        es tener a alguien al otro lado que entiende tus prioridades y 
+        se pone a trabajar contigo de verdad. Sin procesos eternos ni excusas técnicas. 
+        Solo acción, claridad y resultados. Y si te queda alguna duda, la resolvemos hablando, 
+        no con formularios</p>
+
+      <p><b>¿Empezamos en serio? Nosotros ya estamos listos👇🏻</b></p>
+      <button class="btn btn-primary abrir-modal">Elegir mi pack</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark py-4 text-center text-white">
+    <div class="container">
+      <p>
+        <a href="https://ihodei.com/aviso-legal/">Aviso legal</a> | 
+        <a href="https://ihodei.com/politica-de-privacidad/">Política de privacidad</a> | 
+        <a href="https://ihodei.com/terminos-y-condiciones-de-compra/">Términos y condiciones</a> | 
+        <a href="https://ihodei.com/politica-de-cookies-2/">Política de cookies</a>
+      </p>
+      <p>&copy; 2025 HodeiCloud</p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/iHodei/" target="_blank" class="social-icon"><img src="../imagen/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ihodei_/" target="_blank" class="social-icon"><img src="../imagen/instagram.png" alt="Instagram"></a>
+        <a href="https://es.linkedin.com/company/ihodeicloud" target="_blank" class="social-icon"><img src="../imagen/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.tiktok.com/@ihodeicloud" target="_blank" class="social-icon"><img src="../imagen/tik tok.png" alt="TikTok"></a>
+        <a href="https://www.youtube.com/channel/UCXu9csa1KbvWv62vx7cCsVA" target="_blank" class="social-icon"><img src="../imagen/youtube.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../scripts/stripe-init.js"></script>
+  <script src="../scripts/carrito.js"></script>
+  <script src="../scripts/finalizarCompra.js"></script>
+  <script src="../scripts/modalPaquete.js"></script>
+  <!-- Modal de selección de horas -->
+<div class="modal fade" id="modalPaquete" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">¿De cuántas horas quieres contratar el paquete?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row align-items-center mb-3">
+          <div class="col-6">
+            <label for="selectHoras" class="form-label">Horas</label>
+            <select id="selectHoras" class="form-select"></select>
+          </div>
+          <div class="col-6">
+            <label class="form-label">Precio</label>
+            <p id="precioMostrar" class="form-control-plaintext fw-bold mb-0">-</p>
+          </div>
+        </div>
+        <div class="d-grid">
+          <button id="btnGenerarPago" class="btn btn-primary btn-success">Contratar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

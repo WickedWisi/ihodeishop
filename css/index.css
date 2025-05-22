@@ -1,0 +1,246 @@
+/* === TIPOGRAFÍA Y COLORES GENERALES === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #044F8B;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #1C1C1C;
+  font-size: 1.1rem;
+}
+.precio {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* === BODY Y ESTRUCTURA BASE === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body.servicios {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #1C1C1C;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body > .d-flex {
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+  position: relative;
+  z-index: 1;
+}
+footer {
+  flex-shrink: 0;
+}
+
+/* === HEADER === */
+.header-bg {
+  background-color: #044F8B;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.header-bg h1 {
+  color: white;
+  font-size: 3rem;
+}
+.header-bg p {
+  color: white;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.header-bg .lead {
+  font-size: 1.8rem;
+}
+.fondo-azul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #044F8B;
+  z-index: 0;
+}
+
+/* === NAVBAR === */
+.custom-navbar {
+  background-color: #6BA6DA;
+}
+.custom-navbar .navbar-brand img {
+  height: 40px;
+}
+.custom-navbar .nav-link {
+  color: #044F8B;
+  font-weight: 500;
+}
+.custom-navbar .nav-link:hover {
+  color: #0175BE;
+}
+
+/* === CARRITO === */
+#cart-button {
+  background-color: transparent;
+  border-color: #044F8B;
+  color: #044F8B;
+}
+#cart-button:hover {
+  background-color: #0175BE;
+  color: white;
+}
+.cart-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+body.cart-open #cart-dropdown {
+  display: block !important;
+}
+body.cart-open .cart-overlay {
+  display: block;
+}
+.titulo-total {
+  color: #044F8B;
+}
+.cantidad-total {
+  color: black;
+  font-weight: bold;
+}
+.btn-cart {
+  background-color: #F39C12;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* === TARJETAS === */
+.card {
+  background-color: white;
+  border: 2px solid #f39c12;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card-img-placeholder {
+  display: block;
+  margin: 0 auto 0.8rem auto;
+  height: 60px;
+  width: auto;
+}
+
+/* === TÍTULOS PERSONALIZADOS === */
+.titulo-naranja {
+  background-color: #f39c12;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px;
+  margin: 0.3rem auto 1rem auto;
+  border-radius: 5px;
+  width: 80%;
+}
+.text-center .subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0175BE;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.card-body .subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #044F8B;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card-body .descripcion {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #1C1C1C;
+  font-size: 0.95rem;
+}
+
+/* === BOTONES === */
+.btn-primary {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: fit-content;
+  align-self: center;
+}
+.btn-primary:hover {
+  background-color: #c67800;
+}
+
+/* === FOOTER Y REDES === */
+.footer {
+  background-color: #044F8B;
+  color: white;
+}
+.footer a {
+  color: #6BA6DA;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
+.footer p {
+  color: white;
+}
+.social-icons {
+  margin-top: 15px;
+}
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+.social-icon img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,34 @@
+# 1. Archivos de configuración sensibles
+/php/credenciales.php
+/config.php
+
+# 2. Carpetas privadas o con claves API
+/secrets/
+/private/
+
+# 3. Dependencias (si usas Composer o Node)
+/vendor/
+/node_modules/
+
+# 4. Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# 5. Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# 6. Backups y ediciones temporales
+*.bak
+*.old
+*.save
+
+# 7. Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# 8. Rutas personalizadas
+/assets/uploads/
+/assets/img/entradas-generadas/

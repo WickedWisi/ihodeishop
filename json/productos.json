@@ -1,0 +1,105 @@
+[
+    {
+        "id": "kit1",
+        "nombre": "Consultoría del Bono KitDigital de 12000€, 6000€ y 2000€",
+        "categoria": "kitDigital",
+        "desCorta": "Te ayudamos a tramitar y usar tu Bono Kit Digital de forma sencilla y eficaz.",
+        "precio": 36.5,
+        "descripcion": "Asesoría personalizada para tramitar o aprovechar tu Bono Kit Digital de hasta 12.000€. Te guiamos en cada paso, incluso si no tienes bono.",
+        "caracteristicas": [
+            "Si ya tienes el bono tramitado: te ayudamos a invertirlo estratégicamente.",
+            "Si aún no lo tienes: te guiamos paso a paso para conseguirlo fácilmente.",
+            "Si ha caducado: analizamos contigo cómo volver a tramitarlo o alternativas.",
+            "¿No tienes bono? Te ofrecemos soluciones digitales personalizadas igualmente."
+        ],
+        "imagen": "..\/imagen\/kit1.jpg",
+        "linkCompra": "https:\/\/buy.stripe.com\/test_8wM8wZ7HN2o0bLy5kl"
+    },
+    {
+        "id": "kit2",
+        "nombre": "Consultoría del Bono KitDigital de 12000€, 6000€ y 2000€ (y pronto tambien 25000€)",
+        "categoria": "kitDigital",
+        "desCorta": "Tramitamos y optimizamos tu Bono KitDigital. Ahorra tiempo, invierte bien y digitaliza tu negocio.",
+        "precio": 66.5,
+        "descripcion": "Este servicio de consultoría está diseñado para ayudarte a sacar el máximo provecho del Bono KitDigital de 12.000€, 6.000€, 2.000€ (y próximamente, 25.000€). Te acompañamos de forma personalizada para identificar las mejores soluciones digitales para tu negocio, desde la tramitación inicial hasta la inversión estratégica del bono. Aprovecha esta oportunidad única para modernizar tu empresa, digitalizar procesos y mejorar tu competitividad sin complicaciones.",
+        "caracteristicas": [
+            "Si ya tienes el bono tramitado: te ayudamos a invertirlo estratégicamente.",
+            "Si aún no lo tienes: te guiamos paso a paso para conseguirlo fácilmente.",
+            "Si ha caducado: analizamos contigo cómo volver a tramitarlo o alternativas.",
+            "¿No tienes bono? Te ofrecemos soluciones digitales personalizadas igualmente."
+        ],
+        "imagen": "..\/imagen\/kit2.jpg",
+        "linkCompra": "https:\/\/buy.stripe.com\/test_8wM3cF1jpd2E4j65km"
+    },
+    {
+        "id": "kit3",
+        "nombre": "Pack Asesoramiento Inteligencia Artificial: 100 Horas",
+        "categoria": "asesoramiento",
+        "desCorta": "Te ayudamos a tramitar y usar tu Bono Kit Digital de forma sencilla y eficaz.",
+        "precio": 7260,
+        "descripcion": "Asesoría para identificar datasets clave, aplicar IA de forma eficiente y generar valor estratégico. Incluye gobernanza de datos, análisis de herramientas, capacitación y desarrollo de un caso de uso adaptado al negocio.",
+        "caracteristicas": [
+            "Identificación de data sets relevantes para la implementación de algoritmos de IA, con miras a mejorar la comprensión de la información a través de estas técnicas avanzadas.",
+            "Asesoría para la creación de protocolos de gobernanza de datos con normativas de IA, garantizando la validez y la veracidad de los mismos cuando aplique la IA.",
+            "Análisis de herramientas de IA para la gestión de datos, realizando recomendaciones basadas en la realidad de la empresa y su capacidad de inversión.",
+            "Orientación sobre cómo las técnicas de IA pueden derivar información valiosa a partir de los datos existentes para impulsar la toma de decisiones estratégicas.",
+            "Capacitación en el uso estratégico de las técnicas de IA en el manejo de datos.",
+            "Desarrollo y ejecución de un caso de uso adaptado al negocio, relacionado con la aplicación de la inteligencia artificial."
+        ],
+        "imagen": "..\/imagen\/kit3.jpg",
+        "linkCompra": "https:\/\/buy.stripe.com\/test_fZefZrbY3faM02Q8wz"
+    },
+    {
+        "id": "kit4",
+        "nombre": "Pack Asesoramiento Ventas Digitales: 100 Horas",
+        "categoria": "asesoramiento",
+        "desCorta": "PRUEBA",
+        "precio": 7260,
+        "descripcion": "Analizar la situación actual de la empresa en ventas digitales, posicionamiento en RRSS y presencia en internet.\nConcienciar a los empleados sobre la importancia y las técnicas de venta online y marketing digital.\nDefinición de una estrategia de ventas online y presencia digital (RRSS, posicionamiento en motores de búsqueda, Google Analytics, etc.) a medio y largo plazo, utilizando modelos predictivos basados en IA.\nDesarrollo y ejecución de un caso de uso adaptado al negocio utilizando las técnicas apropiadas de inteligencia artificial, en el área de ventas digitales.\nIdentificación de oportunidades o posibles usos de la IA en el ámbito de las ventas Digitales.",
+        "caracteristicas": [
+            "Prueba 1",
+            "Prueba 2"
+        ],
+        "imagen": "..\/imagen\/kit4.jpg",
+        "linkCompra": ""
+    },
+    {
+        "id": "kit5",
+        "nombre": "Paquete avanzado 20 horas de optimizacion web",
+        "categoria": "web",
+        "desCorta": "Optimiza tu sitio con 20 horas de servicios expertos enfocados en mejorar sustancialmente tanto la funcionalidad como el rendimiento de tu plataforma online.",
+        "precio": 1089,
+        "descripcion": "Optimiza tu sitio con 20 horas de servicios expertos enfocados en mejorar sustancialmente tanto la funcionalidad como el rendimiento de tu plataforma online.",
+        "caracteristicas": [
+            "Prueba 1"
+        ],
+        "imagen": "..\/imagen\/kit5.jpg",
+        "linkCompra": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1l0k6h4SWuib7LNCI7CqDWF5iGzJrz2iCXP6VUrTqTXNtEclQ0MQCXreD#fidkdWxOYHwnPyd1blpxYHZxWjA0VHJiXW5NPGdEXzNpNEprNXd0UlFgM2FJQGBCakZdVmJuT3dEbn9OSl11S1Y0Sn1LVFFdbDZJbFIxNV1BYDByU31RMlRVQDN9bm5yaWF0VGBndk0zTWdLNTV0QV8yVjBRMScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+    },
+    {
+        "id": "kit6",
+        "nombre": "Tramitacion",
+        "categoria": "servicios",
+        "desCorta": "La consultoría del bono Kit Consulting de 24.000€ es un servicio exclusivo destinado a impulsar la digitalización de pequeñas y medianas empresas (PYMES) y autónomos.",
+        "precio": 14.52,
+        "descripcion": "La consultoría del bono Kit Consulting de 24.000€ es un servicio exclusivo destinado a impulsar la digitalización de pequeñas y medianas empresas (PYMES) y autónomos. Nuestro equipo de expertos en tecnología y estrategia digital ofrece una asesoría personalizada para identificar e implementar soluciones tecnológicas que se alineen con las necesidades específicas de su negocio. Con una subvención de hasta 24.000€, este programa es una oportunidad excepcional para modernizar su empresa y mejorar su competitividad en el mercado digital.",
+        "caracteristicas": [
+            "Rapido"
+        ],
+        "imagen": "..\/imagen\/kit6.jpg",
+        "linkCompra": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1y6kjjJQRwdwQLjlT5BlGcEqUerZzKQIF1PVyfy7UXnRiBiERHMVHkkt9#fidkdWxOYHwnPyd1blpxYHZxWjA0VHJiXW5NPGdEXzNpNEprNXd0UlFgM2FJQGBCakZdVmJuT3dEbn9OSl11S1Y0Sn1LVFFdbDZJbFIxNV1BYDByU31RMlRVQDN9bm5yaWF0VGBndk0zTWdLNTV0QV8yVjBRMScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+    },
+    {
+        "id": "kit7",
+        "nombre": "PRUEBA",
+        "categoria": "PRUEBA",
+        "desCorta": "PROBANDO",
+        "precio": 1,
+        "descripcion": "PROBANDO",
+        "caracteristicas": [
+            "PROBANDO"
+        ],
+        "imagen": "..\/imagen\/kit7.jpg",
+        "linkCompra": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1qgG5ETrVoT3mwSc7TeZh27DHmA5M3Kv5PBNr5wLwpyHMmcxdUqc3cpSR#fidkdWxOYHwnPyd1blpxYHZxWjA0VHJiXW5NPGdEXzNpNEprNXd0UlFgM2FJQGBCakZdVmJuT3dEbn9OSl11S1Y0Sn1LVFFdbDZJbFIxNV1BYDByU31RMlRVQDN9bm5yaWF0VGBndk0zTWdLNTV0QV8yVjBRMScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+    }
+]

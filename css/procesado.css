@@ -1,0 +1,81 @@
+/* Procesado CSS */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #1C1C1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centra el contenido verticalmente */
+  margin: 0;
+  text-align: center;
+  flex-direction: column; /* Establece la dirección del contenido en columna */
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #044F8B; /* Azul oscuro */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #1C1C1C;
+  margin-bottom: 30px;
+}
+
+/* Estilo único para "Volver al inicio" */
+.volver-inicio {
+  background-color: #f39c12; /* Naranja */
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.volver-inicio:hover {
+  background-color: #c67800; /* Color naranja oscuro en hover */
+}
+
+.volver-inicio:active {
+  background-color: #0175BE;
+  transform: scale(0.98);
+}
+
+/* Estilo para los iconos sociales */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.social-icon {
+  padding: 5px;
+  display: inline-block; 
+  background-color: transparent; 
+}
+
+.social-icon img {
+  width: 40px; 
+  height: 40px; 
+  transition: transform 0.3s ease;
+}
+
+/* Quitar efecto hover sobre los iconos */
+.social-icon a:hover {
+  background-color: transparent !important; 
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); 
+}

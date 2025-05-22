@@ -1,0 +1,526 @@
+/* === RESET Y ESTRUCTURA BASE === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.cena {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #1C1C1C;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* === TIPOGRAFÍA GENERAL === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #044F8B;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #1C1C1C;
+  font-size: 1.1rem;
+}
+
+b {
+  color: #044F8B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+/* === HEADER === */
+.header-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.header-bg-cena {
+  background-color: #044F8B;
+  padding: 3rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header-bg-cena::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.header-bg-cena .container {
+  position: relative;
+  z-index: 1;
+}
+
+.header-bg-cena h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.header-bg-cena h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.header-bg-cena p {
+  color: white;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.header-bg-cena .lead {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #f39c12;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* === NAVBAR === */
+.custom-navbar {
+  background-color: #6BA6DA;
+}
+
+.custom-navbar .navbar-brand img {
+  height: 40px;
+}
+
+.custom-navbar .nav-link {
+  color: #044F8B;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #0175BE;
+}
+
+/* === CARRITO === */
+#cart-button {
+  background-color: transparent;
+  border-color: #044F8B;
+  color: #044F8B;
+}
+
+#cart-button:hover {
+  background-color: #0175BE;
+  color: white;
+}
+
+.cart-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+body.cart-open #cart-dropdown {
+  display: block !important;
+}
+
+body.cart-open .cart-overlay {
+  display: block;
+}
+
+.titulo-total {
+  color: #044F8B;
+}
+
+.cantidad-total {
+  color: black;
+  font-weight: bold;
+}
+
+/* === TARJETAS === */
+.card {
+  background-color: white;
+  border: 2px solid #f39c12;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card-img-placeholder {
+  height: 150px;
+  background-color: #D7E7FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #044F8B;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #0175BE;
+}
+
+.card-text {
+  color: #044F8B;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #F39C12;
+}
+
+/* === BOTONES === */
+.btn-primary {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #c67800;
+}
+
+.btn-primary:active {
+  background-color: #044F8B !important;
+  transform: scale(0.97);
+  transition: none;
+}
+
+/* === SECCIÓN DE INFO Y MAPA === */
+.cena-info {
+  align-items: center;
+}
+
+.cena-info img {
+  max-width: 85%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cena-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #044F8B;
+}
+
+.cena-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #1C1C1C;
+}
+
+.bloque-mapa {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.bloque-mapa h2 {
+  color: #044F8B;
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+#mapaPrincipal {
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.textoInfo {
+  font-weight: 500;
+  color: #1C1C1C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+}
+
+/* === ZONA DE CENAS: CARRUSEL + TARJETAS === */
+#zonaCenas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#carruselCenas {
+  flex: 1 1 400px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+#carruselCenas .carousel-inner {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#carruselCenas .carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#carruselCenas h2 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #c67800;
+}
+
+#infoCena {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-cenas {
+  width: 100%;
+  text-align: center;
+}
+
+.header-cenas h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  color: #f39c12;
+  margin: 0;
+}
+
+#contenedorCenas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+.mensaje-info {
+  font-size: 1rem !important;
+  color: #555;       
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: justify;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  #contenedorCenas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === TARJETA DE CENA === */
+.tarjeta-cena {
+  background: transparent;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 0.8rem;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+}
+
+.tarjeta-cena h5 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+}
+
+.tarjeta-cena p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.tarjeta-cena b {
+  color: #f39c12;
+  font-size: 1.05rem;
+}
+
+.tarjeta-cena ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.tarjeta-cena ul li {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.precio-stock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.precio-stock span {
+  color: white;
+}
+
+.precio-stock b {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+/* === BOTÓN RESERVA === */
+#botonReservaContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#botonReserva {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+#botonReserva:hover {
+  background-color: #d98200;
+}
+
+#botonReserva:active {
+  background-color: #044F8B !important;
+  transform: scale(0.97);
+  transition: none;
+}
+
+/* === VIDEO DE LA CENA === */
+.video-cena {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  max-height: 720px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #044F8B;
+  color: white;
+}
+
+.footer a {
+  color: #6BA6DA;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer p {
+  color: white;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
